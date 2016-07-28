@@ -1,0 +1,58 @@
+{
+  "name": "rambler-grid-lesson",
+  "version": "1.0.0",
+  "description": "[Rambler] Grid lesson for juniors",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development webpack-dev-server --progress",
+    "build": "rm -rf public/assets/* && NODE_ENV=production webpack --progress -p --colors",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jumangi71/grid_lesson.git"
+  },
+  "keywords": [
+    "styl",
+    "grid",
+    "html",
+    "js"
+  ],
+  "author": "Koshkarov Ruslan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jumangi71/grid_lesson/issues"
+  },
+  "homepage": "https://github.com/jumangi71/grid_lesson#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer-core": "5.2.1",
+    "babel": "6.5.2",
+    "babel-core": "6.10.4",
+    "babel-eslint": "6.1.0",
+    "babel-loader": "6.2.4",
+    "babel-preset-es2015": "6.9.0",
+    "css-loader": "0.12.0",
+    "eslint": "1.7.3",
+    "eslint-config-rambler": "0.2.2",
+    "eslint-loader": "1.1.0",
+    "eslint-plugin-react": "3.11.1",
+    "extract-text-webpack-plugin": "0.7.0",
+    "file-loader": "0.8.1",
+    "html-webpack-plugin": "1.3.0",
+    "grid": "git+https://github.com/jumangi71/grid.git",
+    "json-loader": "0.5.1",
+    "lodash": "3.7.0",
+    "path": "0.11.14",
+    "postcss-loader": "0.5.1",
+    "raw-loader": "0.5.1",
+    "style-loader": "0.12.1",
+    "stylint": "1.3.10",
+    "stylint-loader": "1.0.0",
+    "stylus-loader": "1.2.1",
+    "url-loader": "0.5.5",
+    "webpack": "1.13.1",
+    "webpack-dev-server": "1.8.2",
+    "webpack-svgstore-plugin": "3.0.0"
+  }
+}
