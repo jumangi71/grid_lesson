@@ -23,10 +23,10 @@ module.exports = function(_path) {
     },
 
     output: {
-      path: path.join(_path, 'public', 'assets'),
-      filename: '[chunkhash].[name].js',
+      path: path.join(_path, 'public'),
+      filename: 'assets/js/[chunkhash].[name].js',
       chunkFilename: '[chunkhash].[id].js',
-      publicPath: '/assets/'
+      publicPath: '/'
     },
 
     resolve: {
@@ -64,8 +64,8 @@ module.exports = function(_path) {
     postcss: [autoprefixer({ browsers: ['last 5 versions'] })],
 
     plugins: [
-      new webpack.optimize.CommonsChunkPlugin('vendors', '[chunkhash].vendors.js'),
-      new TextPlugin('[chunkhash].[name].css'),
+      new webpack.optimize.CommonsChunkPlugin('vendors', 'assets/js/[chunkhash].vendors.js'),
+      new TextPlugin('assets/css/[chunkhash].[name].css'),
       new HtmlPlugin({
         title: 'Grid Lesson',
         chunks: ['application', 'vendors'],

@@ -9,12 +9,9 @@
 </head>
 <body>
 
+<div id="document">
 
-<section id="main">
-  <section id="content">
-    <div id="mate-content" class="container-fluid"></div>
-  </section>
-</section>
+</div>
 
 {% for (var chunk in o.htmlWebpackPlugin.files.chunks) { %}
 <script src="{%=o.htmlWebpackPlugin.files.chunks[chunk].entry %}"></script>
