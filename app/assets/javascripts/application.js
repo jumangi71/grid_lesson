@@ -1,5 +1,5 @@
 
-require('grid');
+require('style-grid');
 require('_stylesheets/application.styl');
 let template = require('jade!_templates/body.jade');
 
